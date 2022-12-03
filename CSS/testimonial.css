@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: ease 0.6s;
+}
+
+body {
+  background-color: hsl(210deg, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+main {
+  display: grid;
+  gap: 1.7rem;
+  padding: 7rem;
+  max-width: 1000px;
+  grid-template-columns: repeat(8, 110px);
+  grid-template-rows: repeat(2, 300px);
+  grid-template-areas: "f f f f s s t t" "a a h  h h h t t";
+}
+
+.section-one {
+  background-color: hsl(263deg, 55%, 52%);
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: left 90% top 10px;
+  grid-area: f;
+}
+.section-one h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+.section-one p {
+  color: hsla(0deg, 0%, 81%, 0.7);
+}
+
+.section-two {
+  background-color: hsl(217deg, 19%, 35%);
+  grid-area: s;
+}
+.section-two h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+.section-two p {
+  color: hsla(0deg, 0%, 81%, 0.7);
+}
+
+.section-three {
+  background-color: hsl(0deg, 0%, 100%);
+  grid-area: a;
+}
+.section-three h1 {
+  color: hsl(219deg, 29%, 14%);
+}
+.section-three p {
+  color: hsla(217deg, 19%, 35%, 0.7);
+}
+
+.section-four {
+  background-color: hsl(219deg, 29%, 14%);
+  grid-area: h;
+}
+.section-four h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+.section-four p {
+  color: hsla(0deg, 0%, 81%, 0.7);
+}
+
+.section-five {
+  background-color: hsl(0deg, 0%, 100%);
+  grid-area: t;
+}
+.section-five h1 {
+  color: hsl(219deg, 29%, 14%);
+}
+.section-five p {
+  color: hsla(217deg, 19%, 35%, 0.7);
+}
+.section-five::-webkit-scrollbar {
+  width: 5px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.person img {
+  border-radius: 50%;
+  border: 2px solid hsl(263deg, 55%, 52%);
+  width: 35px;
+}
+.person .name {
+  color: hsl(0deg, 0%, 81%);
+  font-size: 1.05rem;
+  margin-bottom: 0.1rem;
+}
+.person .name-two {
+  color: hsl(217deg, 19%, 35%);
+  font-size: 1.05rem;
+  margin-bottom: 0.1rem;
+}
+.person .rank {
+  color: hsla(0deg, 0%, 81%, 0.5);
+  font-size: 13px;
+}
+.person .rank-two {
+  color: hsla(217deg, 19%, 35%, 0.5);
+  font-size: 13px;
+}
+
+.section {
+  padding: 2rem;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+.section h1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.section p {
+  font-size: 13px;
+  line-height: 1.1rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 820px) {
+  main {
+    display: block;
+    padding: 4rem 1rem;
+  }
+  .section {
+    margin: 0 0 1.7rem 0;
+  }
+}/*# sourceMappingURL=testimonial.css.map */

@@ -1,0 +1,158 @@
+@import 'testimonial-config';
+
+body{
+    background-color: $Light-grayish-blue;
+    font-family: $font-family;
+}
+
+main{
+    display: grid;
+    gap: 1.7rem;
+    padding: 7rem;
+    max-width: 1000px;
+   
+    grid-template-columns: repeat(8, 110px);
+    grid-template-rows:repeat(2, 300px);
+    grid-template-areas: 
+    "f f f f s s t t"
+    "a a h  h h h t t";
+    
+  
+}
+
+.section-one {
+    background-color: $Moderate-violet;
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: left 90% top 10px;
+    grid-area: f;
+   
+    h1{
+        color: $White;
+        // color: red;
+    }
+    p{
+       color: $Light-gray-70; 
+    }
+
+
+}
+
+.section-two{
+    background-color: $Very-dark-grayish-blue;
+    grid-area: s;
+    h1{
+        color: $White;
+    }
+    p{
+       color: $Light-gray-70; 
+    }
+}
+
+.section-three {
+    background-color: $White;
+    grid-area: a;
+
+    h1{
+        color: $Very-dark-blackish-blue;
+    }
+    p{
+        color: $Very-dark-grayish-blue-70;
+    }
+}
+
+.section-four{
+    background-color: $Very-dark-blackish-blue;
+    grid-area: h;
+    h1{
+        color: $White;
+    }
+    p{
+       color: $Light-gray-70; 
+    }
+}
+
+.section-five {
+    background-color: $White;
+    grid-area: t;
+    h1{
+        color: $Very-dark-blackish-blue;
+    }
+    p{
+        color: $Very-dark-grayish-blue-70;
+    }
+
+    &::-webkit-scrollbar{
+        width: 5px;
+    }
+}
+
+
+
+.person{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    img{
+        border-radius: 50%;
+        border: 2px solid $Moderate-violet;
+        width: 35px;
+    }
+    .name{
+        color: $Light-gray;
+        font-size: 1.05rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .name-two{
+        color: $Very-dark-grayish-blue;
+        font-size: 1.05rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .rank{
+        color: $Light-gray-50;
+        font-size: 13px;
+    }
+    .rank-two {
+        color: $Very-dark-grayish-blue-50;
+        font-size: 13px;
+    }
+}
+
+.section{
+    padding: 2rem;
+    border-radius: 10px;
+    overflow-y: auto;
+   h1{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+   }
+
+   p{
+    font-size: 13px;
+    line-height: 1.1rem;
+    font-weight: 500;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'testimonial-media-query';
