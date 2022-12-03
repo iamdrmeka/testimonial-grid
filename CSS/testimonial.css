@@ -14,7 +14,6 @@ main {
   display: grid;
   gap: 1.7rem;
   padding: 7rem;
-  max-width: 1000px;
   grid-template-columns: repeat(8, 110px);
   grid-template-rows: repeat(2, 300px);
   grid-template-areas: "f f f f s s t t" "a a h  h h h t t";
@@ -115,6 +114,7 @@ main {
   padding: 2rem;
   border-radius: 10px;
   overflow-y: auto;
+  box-shadow: 0 0 10px -6px hsl(219deg, 29%, 14%);
 }
 .section h1 {
   font-size: 1rem;
