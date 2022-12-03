@@ -127,6 +127,10 @@ main{
     border-radius: 10px;
     overflow-y: auto;
     box-shadow: 0 0 10px -6px $Very-dark-blackish-blue;
+
+    &::-webkit-scrollbar{
+        width: 8px;
+    }
    h1{
     font-size: 1rem;
     line-height: 1.5rem;
